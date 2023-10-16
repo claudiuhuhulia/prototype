@@ -3,6 +3,9 @@ header h1 {
     margin: 0;
     display: inline;
 }
+#myCarouserl img{
+    height: 500px;
+}
 
 ul {
     list-style-type: none;
@@ -86,7 +89,7 @@ figure{
 }
 
 
-img, footer img{
+ footer img{
     height: 150px;
 }
 
@@ -101,7 +104,7 @@ li{
     padding-bottom: 0.6rem;
 }
 
-<<<<<<< HEAD
+
 div.item{
     padding-top: 30px;
 }
@@ -164,8 +167,4 @@ div.area-di-competenza img{
 
 div.aree-di-competenza h3 {
     color: white;
-=======
-.carousel-item img{
-    object-fit: cover;
->>>>>>> 5-create-jumbo
 }
