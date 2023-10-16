@@ -4,11 +4,12 @@ ul {
 }
 
 header li {
-    color: gold;
+    color: rgb(252, 223, 63);
 }
 
-header h1 {
-    color: gold;
+header h1, footer h3 {
+    color: rgb(252, 223, 63);
+
     
 }
 
@@ -43,10 +44,6 @@ div.header-title {
     padding-left: 10px;
     height: 60px;
     text-align: center;
-}
-
-nav {
-    
 }
 
 nav ul {
