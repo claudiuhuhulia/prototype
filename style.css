@@ -1,5 +1,31 @@
+
 footer{
     background-color: #0F0D10;
-    height: 180px;
+    height: 280px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.link-nav, .link-contatti{
+    height: 250px;
+    width: 200px;
+}
+
+figure{
+    height: 80%;
+}
+img{
+    height: 80%;
+}
+
+.link-nav ul,.link-contatti ul{
+    padding-inline-start: 0;
+    padding-left: 10px;
+}
+
+li{
+    color: gray;
+    list-style-type: none;
+    padding-bottom: 0.6rem;
 }
