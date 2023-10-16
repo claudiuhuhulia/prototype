@@ -1,4 +1,59 @@
 
+ul {
+    list-style-type: none;
+}
+
+header li {
+    color: gold;
+}
+
+header h1 {
+    color: gold;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 5px;
+}
+
+a:hover{
+    color: white;
+}
+
+.bgc-black{
+    background-color: #171317;
+}
+
+header{
+  padding: 10px 0 10px 10px;  
+}
+
+div.header-img > img{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+div.header-title {
+    font-size: 2em;
+    margin-left: 1px;
+    padding-left: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+nav {
+    
+}
+
+nav ul {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
 footer{
     background-color: #0F0D10;
     height: 280px;
