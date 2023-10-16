@@ -24,7 +24,7 @@ a:hover{
 }
 
 .bgc-black{
-    background-color: #171317;
+    background-color: #0f0d10;
 }
 
 header{
@@ -80,4 +80,8 @@ li{
     color: gray;
     list-style-type: none;
     padding-bottom: 0.6rem;
+}
+
+.carousel-item img{
+    object-fit: cover;
 }
