@@ -101,6 +101,7 @@ li{
     padding-bottom: 0.6rem;
 }
 
+<<<<<<< HEAD
 div.item{
     padding-top: 30px;
 }
@@ -163,4 +164,8 @@ div.area-di-competenza img{
 
 div.aree-di-competenza h3 {
     color: white;
+=======
+.carousel-item img{
+    object-fit: cover;
+>>>>>>> 5-create-jumbo
 }
