@@ -14,8 +14,10 @@ header li {
 
 header h1, footer h3 {
     color: rgb(252, 223, 63);
+}
 
-    
+header{
+    height: 100px;
 }
 
 li a {
@@ -29,7 +31,7 @@ a:hover{
 }
 
 .bgc-black{
-    background-color: #171317;
+    background-color: #0f0d10;
 }
 
 header{
@@ -40,8 +42,9 @@ div.header-img > img{
     width: 90px;
     height: 90px;
 }
-
-
+main {
+     height: calc(100vh - 100px); 
+}
 
 div.header-title {
     font-size: 2em;
@@ -81,8 +84,10 @@ footer{
 figure{
     height: 80%;
 }
-img{
-    height: 80%;
+
+
+img, footer img{
+    height: 150px;
 }
 
 .link-nav ul,.link-contatti ul{
@@ -124,10 +129,6 @@ div.item-content ul {
     margin: 0;
 }
 
-
-main {
-    height: 100vh;
-}
 
 div.aree-di-competenza {
     background-color: #222024;
