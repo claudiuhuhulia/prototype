@@ -24,6 +24,14 @@ header{
     height: 100px;
 }
 
+#gmp-map {
+    height: 100%;
+  }
+
+  .maps{
+    height: 400px;
+  }
+
 li a {
     text-decoration: none;
     color: inherit;
