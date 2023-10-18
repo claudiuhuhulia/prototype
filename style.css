@@ -323,4 +323,8 @@ div.aree-di-competenza {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
+
+  .flip-card {
+    margin: 10px;
+  }
   
