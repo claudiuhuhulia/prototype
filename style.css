@@ -117,9 +117,6 @@ a:hover{
     z-index: 2;
 }
 
-
-
-
 div.header-img > img{
     width: 90px;
     height: 90px;
@@ -214,20 +211,24 @@ div.item-content ul {
 
 
 div.aree-di-competenza {
+    width: 100%;
     background-color: #222024;
-    padding: 20px;
+    padding: 40px;
     margin-top: 40px;
     text-align: center;
 }
 
-div.area-di-competenza {
+div.area-di-competenza, .flip-card-back {
+    display: inline-block;
     background-color: white;
-    width: 15%;
-    height: auto;
+    width: 250px;
     margin-left: 10px;
     text-align: center;
     height: 250px;
     border-radius: 10px;
+    margin-top: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 div.area-di-competenza a {
@@ -240,10 +241,73 @@ div.area-di-competenza a {
 
 div.area-di-competenza img{
     padding: 10px;
-    width: 50%;
+    width: 150px;
     height: 150px;
 }
 
 div.aree-di-competenza h3 {
     color: white;
 }
+
+div.aree-di-competenza {
+    display: inline-block;
+}
+
+.item-card{
+    display: inline-block;
+}
+
+.flip-card{
+    height: 250px;
+    display: inline-block;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    position: relative;
+    left: -10px;
+    top: -270px;
+    background-color: white ;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+   
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  
