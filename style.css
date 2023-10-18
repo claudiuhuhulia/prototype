@@ -158,6 +158,10 @@ nav a:hover{
     height: auto;
 }
 
+svg {
+    background-color: #171717
+}
+
 .aree-di-competenza-box{
     padding-top: 20px;
     margin: 35px 0;
