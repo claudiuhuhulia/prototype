@@ -25,9 +25,16 @@ header{
 }
 
 #gmp-map {
-    height: 100%;
+    height: 80%;
   }
 
+.maps, .contattaci{
+    height: 500px;
+    width: 50%;  
+}
+
+.contattaci-info{
+    height: 75%;
   .maps{
     height: 400px;
 }
