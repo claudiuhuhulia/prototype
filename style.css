@@ -209,6 +209,13 @@ div.item-content ul {
     margin: 0;
 }
 
+.aree-di-competenza-box{
+    padding-top: 20px;
+    width: 100%;
+    background-color: #222024;
+    color: white;
+    text-align: center;
+}
 
 div.aree-di-competenza {
     width: 100%;
@@ -289,6 +296,7 @@ div.aree-di-competenza {
   }
   
   .flip-card-inner {
+    height: 250px;
     position: relative;
     text-align: center;
     transition: transform 0.6s;
