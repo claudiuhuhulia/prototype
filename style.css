@@ -108,6 +108,11 @@ nav a:hover{
     object-fit: cover;
 }
 
+#team{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 #myCarousel h2{ 
     position: absolute;
     top: 50%;
@@ -118,6 +123,10 @@ nav a:hover{
 }
 #myCarousel{
     position: relative;
+}
+
+.bg-maps{
+    background-color: #E3E3E3;
 }
 
 .carousel-inner .dark-overlay {
@@ -152,6 +161,7 @@ nav a:hover{
 .item{
     padding-top: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .item-img{
@@ -165,13 +175,16 @@ nav a:hover{
 }
 
 svg {
-    background-color: #171717;
+    background-color:  #222024;
     transform: rotate(180deg);
 }
 
+#second-svg{
+    background-color:  #E3E3E3;
+}
+
 .aree-di-competenza-box{
-    padding-top: 20px;
-    margin: 35px 0;
+    padding-top: 50px;
     width: 100%;
     background-color: #222024;
     color: white;
@@ -182,7 +195,6 @@ svg {
     width: 100%;
     background-color: #222024;
     padding: 40px;
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -219,7 +231,6 @@ svg {
 
 .aree-di-competenza {
     display: inline-block;
-    padding-bottom: 150px;
 }
 
 .flip-card{
@@ -380,11 +391,10 @@ figure{
  {
    display: none;
    position: absolute;
-   top: 50px;
-   right: 75px;
+   top: 40px;
+   right: 30px;
    
    z-index: 1;
-   
    -webkit-user-select: none;
    user-select: none;
  }
@@ -431,7 +441,7 @@ figure{
    margin-bottom: 5px;
    position: relative;
    
-   background: #cdcdcd;
+   background:  rgb(252, 223, 63);
    border-radius: 3px;
    
    z-index: 1;
@@ -461,7 +471,7 @@ figure{
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background:rgb(252, 223, 63);
  }
  
  /*
@@ -489,7 +499,7 @@ figure{
  {
    position: absolute;
    width: 200px;
-   margin: -100px 0 0 -50px;
+   margin: -100px 0 0 -120px;
    padding: 50px;
    padding-top: 125px;
    
