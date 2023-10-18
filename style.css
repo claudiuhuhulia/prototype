@@ -34,14 +34,14 @@ header{
 }
 
 .contattaci-info{
-    height: 75%;
+    height: 75%;}
   .maps{
     height: 400px;
 }
 
-nav, nav ul, nav ul li {
+/* nav, nav ul, nav ul li {
     height: 100%;
-}
+} */
 
 nav ul li {
     vertical-align: middle;
