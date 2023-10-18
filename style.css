@@ -352,7 +352,7 @@ figure{
 
 #menuToggle
 {
-  display: block;
+  display: none;
   position: relative;
   top: 50px;
   left: 50px;
