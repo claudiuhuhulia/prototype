@@ -39,9 +39,9 @@ header{
     height: 400px;
 }
 
-/* nav, nav ul, nav ul li {
+nav, nav ul, nav ul li {
     height: 100%;
-} */
+}
 
 nav ul li {
     vertical-align: middle;
@@ -72,6 +72,7 @@ nav li a {
 
 nav li {
     height: 100%;
+    padding-bottom: 0;
 }
 
 nav a {
@@ -139,11 +140,9 @@ div.header-nav{
     vertical-align: middle;
 }
 
-nav ul li{
-    padding-bottom: 0;
-}
 
 nav ul {
+    height: 100%;
     padding-left: 50px;
     padding-top: 10px;
     font-size: 1.2rem;
