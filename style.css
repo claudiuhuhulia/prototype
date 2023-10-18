@@ -1,19 +1,5 @@
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-    display: inline;
-}
-#myCarousel img{
-    height: 500px;
-    object-fit: cover;
-}
-
 ul {
     list-style-type: none;
-}
-
-header li {
-    color: rgb(252, 223, 63);
 }
 
 header h1, footer h3 {
@@ -24,27 +10,66 @@ header{
     height: 100px;
 }
 
-#gmp-map {
-    height: 80%;
-  }
-
-.maps, .contattaci{
-    height: 500px;
-    width: 50%;  
+.bgc-black{
+    background-color: #0f0d10;
 }
 
-.contattaci-info{
-    height: 75%;}
-  .maps{
-    height: 400px;
+main {
+    height: calc(100vh - 100px); 
+}
+
+li{
+    color: gray;
+    list-style-type: none;
+    padding-bottom: 0.6rem;
+}
+
+/* header body */
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    display: inline;
+}
+
+div.header-title {
+    font-size: 2em;
+    margin-left: 1px;
+    padding-left: 10px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header li {
+    color: rgb(252, 223, 63);
+}
+
+.header-img img{
+    width: 90px;
+    height: 90px;
+}
+
+/* nav */
+
+div.header-nav{
+    text-align: center;
+    vertical-align: middle;
 }
 
 nav, nav ul, nav ul li {
     height: 100%;
+    vertical-align: middle;
 }
 
-nav ul li {
-    vertical-align: middle;
+nav ul {
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+nav li {
+    padding-bottom: 0;
 }
 
 nav li a {
@@ -58,6 +83,26 @@ nav li a {
     color: inherit;
 }
 
+nav a {
+    transition: .2s;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: white;
+    border-bottom: solid;
+    transition: .2s;
+
+}
+
+
+/* Carosello */
+
+#myCarousel img{
+    height: 500px;
+    object-fit: cover;
+}
+
 #myCarousel h2{ 
     position: absolute;
     top: 50%;
@@ -68,27 +113,6 @@ nav li a {
 }
 #myCarousel{
     position: relative;
-}
-
-nav li {
-    height: 100%;
-    padding-bottom: 0;
-}
-
-nav a {
-    transition: .2s;
-}
-
-a:hover{
-    color: white;
-    border-bottom: white;
-    border-bottom: solid;
-    transition: .2s;
-
-}
-
-.bgc-black{
-    background-color: #0f0d10;
 }
 
 .carousel-inner .dark-overlay {
@@ -118,94 +142,20 @@ a:hover{
     z-index: 2;
 }
 
-div.header-img > img{
-    width: 90px;
-    height: 90px;
-}
-main {
-     height: calc(100vh - 100px); 
-}
+/* Aree di Competenza */
 
-div.header-title {
-    font-size: 2em;
-    margin-left: 1px;
-    padding-left: 10px;
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-div.header-nav{
-    text-align: center;
-    vertical-align: middle;
-}
-
-
-nav ul {
-    height: 100%;
-    padding-left: 50px;
-    padding-top: 10px;
-    font-size: 1.2rem;
-}
-
-footer{
-    background-color: #0F0D10;
-    height: 280px;
-    width: 100%;
-}
-
-.link-nav, .link-contatti{
-    height: 250px;
-    width: 200px;
-}
-
-figure{
-    height: 80%;
-}
-
-
- footer img{
-    height: 150px;
-}
-
-.link-nav ul,.link-contatti ul{
-    padding-inline-start: 0;
-    padding-left: 10px;
-}
-
-li{
-    color: gray;
-    list-style-type: none;
-    padding-bottom: 0.6rem;
-}
-
-
-div.item{
+.item{
     padding-top: 30px;
 }
 
-div.item-img{
+.item-img{
     width: 50%;
     padding-right: 5%;
 }
 
-div.item-img img {
+.item-img img {
     width: 100%;
     height: auto;
-}
-
-div.contact {
-    width: 50%;
-    padding: 0;
-}
-
-div.item-content{
-    width: 50%;
-}
-
-div.item-content ul {
-    padding: 0;
-    margin: 0;
 }
 
 .aree-di-competenza-box{
@@ -216,7 +166,7 @@ div.item-content ul {
     text-align: center;
 }
 
-div.aree-di-competenza {
+.aree-di-competenza {
     width: 100%;
     background-color: #222024;
     padding: 40px;
@@ -224,7 +174,7 @@ div.aree-di-competenza {
     text-align: center;
 }
 
-div.area-di-competenza, .flip-card-back {
+.area-di-competenza, .flip-card-back {
     display: inline-block;
     background-color: white;
     width: 250px;
@@ -237,7 +187,7 @@ div.area-di-competenza, .flip-card-back {
     backface-visibility: hidden;
 }
 
-div.area-di-competenza a {
+.area-di-competenza a {
     display: block;
     font-weight: bold;
     text-decoration: none;
@@ -245,23 +195,19 @@ div.area-di-competenza a {
     font-size: 1.3rem;
 }
 
-div.area-di-competenza img{
+.area-di-competenza img{
     padding: 10px;
     width: 150px;
     height: 150px;
 }
 
-div.aree-di-competenza h3 {
+.aree-di-competenza h3 {
     color: white;
 }
 
-div.aree-di-competenza {
+.aree-di-competenza {
     display: inline-block;
     padding-bottom: 150px;
-}
-
-.item-card{
-    display: inline-block;
 }
 
 .flip-card{
@@ -297,6 +243,7 @@ div.aree-di-competenza {
   }
   
   .flip-card-inner {
+    display: inline-block;
     height: 250px;
     position: relative;
     text-align: center;
@@ -313,7 +260,7 @@ div.aree-di-competenza {
   
    
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #fff;
     color: black;
   }
   
@@ -327,4 +274,63 @@ div.aree-di-competenza {
   .flip-card {
     margin: 10px;
   }
-  
+
+  div.contact {
+    width: 50%;
+    padding: 0;
+}
+
+div.item-content{
+    width: 50%;
+}
+
+div.item-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Mappa */
+
+#gmp-map {
+    height: 80%;
+  }
+
+.maps, .contattaci{
+    height: 500px;
+    width: 50%;  
+}
+
+.contattaci-info{
+    height: 75%;
+}
+
+.maps {
+    height: 400px;
+}
+
+/* footer */
+
+footer{
+    background-color: #0F0D10;
+    height: 280px;
+    width: 100%;
+}
+
+.link-nav, .link-contatti{
+    height: 250px;
+    width: 200px;
+}
+
+figure{
+    height: 80%;
+}
+
+
+ footer img{
+    height: 150px;
+}
+
+.link-nav ul,.link-contatti ul{
+    padding-inline-start: 0;
+    padding-left: 10px;
+}
