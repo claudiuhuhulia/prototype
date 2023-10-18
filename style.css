@@ -160,6 +160,7 @@ nav a:hover{
 
 .aree-di-competenza-box{
     padding-top: 20px;
+    margin: 35px 0;
     width: 100%;
     background-color: #222024;
     color: white;
@@ -233,7 +234,8 @@ nav a:hover{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     text-align: center;
-  }
+    font-size: .80rem;
+}
 
   .flip-card {
     background-color: transparent;
