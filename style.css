@@ -146,6 +146,7 @@ nav a:hover{
 
 .item{
     padding-top: 30px;
+    text-align: center;
 }
 
 .item-img{
@@ -339,4 +340,26 @@ figure{
 .link-nav ul,.link-contatti ul{
     padding-inline-start: 0;
     padding-left: 10px;
+}
+
+@media (max-width: 1415px) {
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        margin-right: 50px;
+    }
+
+    .w-25{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1080px) {
+        
+    
+
 }
