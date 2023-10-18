@@ -165,7 +165,8 @@ nav a:hover{
 }
 
 svg {
-    background-color: #171717
+    background-color: #171717;
+    transform: rotate(180deg);
 }
 
 .aree-di-competenza-box{
