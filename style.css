@@ -257,6 +257,7 @@ div.aree-di-competenza h3 {
 
 div.aree-di-competenza {
     display: inline-block;
+    padding-bottom: 150px;
 }
 
 .item-card{
@@ -270,6 +271,7 @@ div.aree-di-competenza {
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
@@ -278,11 +280,11 @@ div.aree-di-competenza {
 }
 
 .flip-card-back {
-    position: relative;
     left: -10px;
-    top: -270px;
+    position: absolute;
     background-color: white ;
     color: black;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     text-align: center;
   }
@@ -298,12 +300,15 @@ div.aree-di-competenza {
     height: 250px;
     position: relative;
     text-align: center;
+    -webkit-transition: transform 0.6s;
     transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   }
   
    
@@ -315,6 +320,7 @@ div.aree-di-competenza {
   .flip-card-back {
     background-color: white;
     color: black;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
   
