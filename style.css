@@ -388,6 +388,10 @@ figure{
         display: none;
     }
 
+    .header-title h1{
+        display: none;
+    }
+
      body
      {
        margin: 0;
