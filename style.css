@@ -363,9 +363,6 @@ figure{
 }
 
 
-
-
-
 @media (max-width: 1415px) {
     
     header h1 {
@@ -583,6 +580,23 @@ figure{
         width: 100%;
     }
 
+}
+
+@media (max-width: 780px){
+
+    .link-contatti, .link-nav {
+        text-align: center;
+        margin: 0;
+    }
+
+    #footer-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+    }
 }
 
 @media (max-width: 750px) {
