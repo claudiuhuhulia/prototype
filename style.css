@@ -568,6 +568,25 @@ figure{
     }
 
 }
+@media (max-width:780px){
+    #myCarousel{
+        display: none;
+    }
+    #team{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .item-content{
+        padding-top: 25px;
+    }
+
+    .item-img{
+        padding-right: 0;
+        width: 100%;
+    }
+
+}
 
 @media (max-width: 750px) {
 
