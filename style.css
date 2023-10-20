@@ -129,7 +129,6 @@ nav input {
 }
 
 #team{
-    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -317,6 +316,26 @@ svg {
     padding: 25px 20px;
 }
 
+/* divisore */
+
+.divisor img{
+    height: 150px;
+    border-radius: 50%;
+}
+.line{
+    border-bottom: 5px solid #e7b042;
+    width: 200px;
+    border-radius: 30%;
+}
+
+.divisor{
+    display: flex;
+}
+
+#divisor-smart{
+    display: none;
+}
+
 /* Mappa */
 
 .maps a{
@@ -401,7 +420,7 @@ footer a {
     .header-title h1{
         display: none;
     }
-
+   
      body
      {
        margin: 0;
@@ -589,6 +608,13 @@ footer a {
     #myCarousel{
         display: none;
     }
+    .divisor{
+        display: none;
+    }
+    #divisor-smart{
+        display: flex;
+    }
+
     #team{
         flex-direction: column;
         padding: 0;
