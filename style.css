@@ -686,30 +686,3 @@ footer a {
     }
 
 }
-
-
-@media (max-width: 300px) {
-        
-    .flip-card, .flip-card-inner, .flip-card-front, .flip-card-inner, .flip-card-back {
-        width: 150px;
-        height: 150px;
-    }
-
-    .flip-card-front img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .flip-card-front a {
-        font-size: .75rem;
-    }
-
-    .flip-card-back {
-        font-size: .5rem;
-    }
-
-    .flip-card-back p {
-        padding-top: 10px;
-    }
-
-}
