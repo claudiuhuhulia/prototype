@@ -1,6 +1,7 @@
 html body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -335,6 +336,11 @@ svg {
     height: 400px;
 }
 
+.contattaci a {
+    text-decoration: none;
+    color: var(--bs-heading-color);
+}
+
 /* footer */
 
 footer{
@@ -357,10 +363,16 @@ figure{
     height: 150px;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .link-nav ul,.link-contatti ul{
     padding-inline-start: 0;
     padding-left: 10px;
 }
+
+
 
 
 @media (max-width: 1415px) {
