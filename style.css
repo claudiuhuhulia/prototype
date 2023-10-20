@@ -217,11 +217,14 @@ svg {
 }
 
 .aree-di-competenza-box, .aree-di-competenza{
-    padding-top: 50px;
     width: 100%;
     background-color: #222024;
     color: white;
     text-align: center;
+}
+
+.aree-di-competenza-box {
+    padding: 70px 0;
 }
 
 .aree-di-competenza h3 {
@@ -306,12 +309,15 @@ svg {
     font-size: 1.3rem;
 }
 
-.flip-card-front img{
-    margin-top: 20px;
+.flip-card-front i{
+    margin-top: 51px;
     padding: 10px;
-    width: 150px;
-    height: 150px;
 }
+
+.fa-car-burst, .fa-heart-pulse, .fa-house, .fa-people-group, .fa-file-signature {
+    font-size: 5rem;
+}
+
 
 .aree-di-competenza p {
     padding: 25px 20px;
@@ -374,6 +380,13 @@ footer a {
 .link-nav ul,.link-contatti ul{
     padding-inline-start: 0;
 }
+
+
+#doc {
+    padding-left: 40px;
+}
+
+
 
 
 
