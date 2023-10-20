@@ -391,7 +391,6 @@ figure{
      {
        margin: 0;
        padding: 0;
-    
        background: #232323;
        color: #cdcdcd;
        font-family: "Avenir Next", "Avenir", sans-serif;
@@ -415,11 +414,14 @@ figure{
        color: #232323;
     
        transition: color 0.3s ease;
+       transition:  0.3s ease;
+
      }
 
      #menuToggle a:hover
      {
-       color: tomato;
+       background-color:  #e7b042;
+       color: #0F0D10;
      }
 
 
@@ -506,37 +508,45 @@ figure{
      {
        position: absolute;
        width: 200px;
-       margin: -100px 0 0 -150px;
-       padding: 50px;
-       padding-top: 125px;
-    
+       margin: -100px 0 0 -135px;
+       padding-top: 125px; 
+       border-radius: 12px;
        height: auto;
-
-       background: #E3E3E3;
+       background: #0F0D10;
        list-style-type: none;
        -webkit-font-smoothing: antialiased;
        /* to stop flickering of text in safari */
-    
        transform-origin: 0% 0%;
        transform: translate(100%, 0);
-    
        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
      }
 
      #menu li
      {
+        
+    display: block;
        padding: 10px 0;
        font-size: 1rem;
      }
 
      #menu li a {
        color: #e7b042;
+       width: 100%;
+     }
+     #menu li:hover, #menu li a:hover  {
+        background-color: #e7b042;;
+     }
+     #menu li:hover a{
+        color: #0F0D10;
+        border: 0;
+
      }
 
      nav li a {
-        padding: 20px 0;
+        padding: 10px 0;
      }
 
+     
      /*
       * And let's slide it in from the left
       */
