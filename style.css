@@ -318,6 +318,10 @@ svg {
 
 /* Mappa */
 
+.maps a{
+    color: #222024;
+}
+
 #gmp-map {
     height: 80%;
   }
