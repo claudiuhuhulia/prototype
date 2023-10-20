@@ -338,7 +338,7 @@ svg {
     display: flex;
 }
 
-#divisor-smart{
+#divisor-smart, #divisor-smart-contacts{
     display: none;
 }
 
@@ -616,6 +616,17 @@ footer a {
 
     /* Chi siamo */
 
+}
+
+@media (max-width:992px){
+    #divisor-smart-contacts{
+        display: flex;
+    }
+
+    .contattaci-info{
+        height: 100%;
+    }
+    
 }
 @media (max-width:780px){
     #myCarousel{
