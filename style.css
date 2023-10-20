@@ -365,9 +365,7 @@ figure{
 
 @media (max-width: 1415px) {
     
-    header h1 {
-        font-size: 1.5rem;
-    }
+    
 
     nav {
         margin-right: 20px;
@@ -556,11 +554,6 @@ figure{
 
     /* Chi siamo */
 
-
-    .item-content h2 {
-        font-size: 1.5rem;
-    }
-
 }
 @media (max-width:780px){
     #myCarousel{
@@ -607,39 +600,13 @@ figure{
         width: 100%;
     }
 
-    .item-content {
-        width: 100%;
+    #team .item-content {
+        width: 80%;
+        margin-left: 4%;
     }
 
 }
 
-@media (max-width: 650px) {
-
-    .header-title h1{
-        font-size: 1rem;
-    }
-        
-    .flip-card, .flip-card-inner, .flip-card-front, .flip-card-inner, .flip-card-back {
-        width: 200px;
-        height: 200px;
-    }
-
-    .flip-card-front img {
-        width: 125px;
-        height: 125px;
-    }
-
-    .flip-card-front a {
-        font-size: 1rem;
-    }
-
-    .flip-card-back {
-        font-size: .65rem;
-    }
-
-
-
-}
 
 @media (max-width: 300px) {
         
