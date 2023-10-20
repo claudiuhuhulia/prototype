@@ -1,9 +1,11 @@
 /* AIzaSyB7SCPWioTnCJikbu-4KihUHNygkADIQ80 */
 
+
+
 function initMap() {
   const myLatLng = {
-    lat: 44.512691497802734,
-    lng: 11.339189529418945
+    lat: 44.50951401998059,
+    lng: 11.300555926121575
   };
   const map = new google.maps.Map(document.getElementById("gmp-map"), {
     zoom: 14,
