@@ -370,6 +370,24 @@ svg {
     color: var(--bs-heading-color);
 }
 
+#contattaci h4 {
+    display: inline-block;
+    width: 70%;
+    margin-left: 30%;
+    padding-bottom: 10px;
+}
+
+.fa-bus{
+    margin-left: -2px;
+}
+
+.fa-square-parking {
+    margin-left: 1px;
+    margin-right: 28px;
+}
+
+
+
 /* footer */
 
 footer{
@@ -403,6 +421,11 @@ footer a {
 
 #doc {
     padding-left: 40px;
+}
+
+.link-nav {
+    margin-left: 48px;
+    padding-left: 24px;
 }
 
 
@@ -683,6 +706,17 @@ footer a {
     #team .item-content {
         width: 80%;
         margin-left: 4%;
+    }
+
+
+
+}
+
+@media (max-width: 536px) {
+
+    #link-nav {
+        margin-left: 0;
+        padding-left: 0;
     }
 
 }
