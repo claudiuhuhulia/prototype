@@ -634,3 +634,20 @@ footer a {
         padding-left: 0;
     }
 }
+
+@media (max-width: 410px){
+    #contattaci h4{
+        margin-left: 15%;
+        width: 100%;
+    }
+
+    #contattaci h4 i {
+        width: 10%;
+    }
+}
+
+@media (max-width: 410px){
+    #contattaci h4{
+        font-size: 115%;
+    }
+}
