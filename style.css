@@ -1,3 +1,7 @@
+.hide {
+    display: none;
+}
+
 /* Generics */
 html {
     position: fixed;
