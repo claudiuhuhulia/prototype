@@ -319,6 +319,28 @@ nav a:hover{
     padding-left: 40px;
 }
 
+.flip-card-back span {
+    display: block;
+    margin-top: 25px;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.flip-card-back p {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    height: 80%;
+}
+
+.flip-card-back span.long-card{
+    margin-top: 5px;
+}
+
+.flip-card-back span.disb{
+    margin-bottom: 10px;
+}
+
 /* Mappa */
 .bg-maps{
     background-color: #E3E3E3;
