@@ -294,12 +294,11 @@ nav a:hover{
     font-size: .80rem;
 }
 
-.flip-card-front a {
+.flip-card-front h4 {
     display: block;
     font-weight: bold;
     text-decoration: none;
     color: inherit;
-    font-size: 1.3rem;
 }
 
 .flip-card-front i{
