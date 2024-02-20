@@ -351,7 +351,16 @@ nav a:hover{
 
 #gmp-map {
     height: 80%;
-  }
+}
+
+iframe {
+    height: 320px;
+    width: 100%;
+}
+
+.maps{
+    text-align: center;
+}
 
 .maps, .contattaci{
     height: 500px;
