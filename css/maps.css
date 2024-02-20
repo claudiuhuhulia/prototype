@@ -1,0 +1,30 @@
+/* Mappa */
+.bg-maps{
+    background-color: #E3E3E3;
+}
+
+.maps a{
+    color: #222024;
+}
+
+#gmp-map {
+    height: 80%;
+}
+
+iframe {
+    height: 320px;
+    width: 100%;
+}
+
+.maps{
+    text-align: center;
+}
+
+.maps, .contattaci{
+    height: 500px;
+    width: 50%;  
+}
+
+.maps {
+    height: 400px;
+}

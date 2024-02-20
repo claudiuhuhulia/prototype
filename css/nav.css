@@ -1,0 +1,51 @@
+/* Nav */
+.header-nav{
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav span, nav input {
+    display: none;
+}
+
+nav, #menu, #menu li {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
+#menuToggle {
+    height: 100%;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+nav li {
+    padding-bottom: 0;
+    display: inline-block;
+}
+
+nav li a {
+    padding-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    color: inherit;
+    transition: .2s;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: white;
+    border-bottom: solid;
+    transition: .2s;
+}

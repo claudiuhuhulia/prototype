@@ -1,0 +1,32 @@
+/* footer */
+footer{
+    background-color: #0F0D10;
+    height: 280px;
+    width: 100%;
+}
+
+.link-nav, .link-contatti{
+    height: 250px;
+    width: 200px;
+}
+
+figure{
+    height: 80%;
+}
+
+footer img{
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.link-nav ul,.link-contatti ul{
+    padding-inline-start: 0;
+}
+
+.link-nav {
+    margin-left: 48px;
+    padding-left: 24px;
+}

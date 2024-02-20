@@ -1,0 +1,170 @@
+/* Chi siamo */
+#team{
+    padding-bottom: 80px;
+}
+
+.we-section{
+    width: 50%;
+}
+
+.we-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item, .aree-di-competenza{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-img{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Aree di Competenza */
+.aree-di-competenza-box, .aree-di-competenza{
+    width: 100%;
+    background-color: #222024;
+    color: white;
+    text-align: center;
+}
+
+.aree-di-competenza-box {
+    padding: 70px 0;
+}
+
+.aree-di-competenza h3 {
+    color: white;
+}
+
+.aree-di-competenza {
+    padding: 40px 0;
+    margin-bottom: 0;
+}
+
+.flip-card {
+    display: inline-block;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 10px;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+    display: inline-block;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+.flip-card-front, .flip-card-back {
+    display: inline-block;
+    background-color: white;
+    width: 250px;
+    text-align: center;
+    height: 250px;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: black;
+}
+
+.flip-card-back {
+    left: -10px;
+    position: absolute;
+    background-color: white ;
+    color: black;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: .80rem;
+}
+
+.flip-card-front h4 {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.flip-card-front i{
+    margin-top: 51px;
+    padding: 10px;
+}
+
+.fa-car-burst, .fa-heart-pulse, .fa-house, .fa-people-group, .fa-file-signature {
+    font-size: 5rem;
+}
+
+.aree-di-competenza p {
+    padding: 25px 20px;
+}
+
+#doc {
+    padding-left: 40px;
+}
+
+.flip-card-back span {
+    display: block;
+    margin-top: 25px;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.flip-card-back p {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    height: 80%;
+}
+
+.flip-card-back span.long-card{
+    margin-top: 5px;
+}
+
+.flip-card-back span.disb{
+    margin-bottom: 10px;
+}
+
+/* Informazioni */
+.contattaci-info{
+    height: 75%;
+}
+
+.contattaci a {
+    text-decoration: none;
+    color: var(--bs-heading-color);
+}
+
+#contattaci h4 {
+    display: inline-block;
+    width: 70%;
+    margin-left: 30%;
+    padding-bottom: 10px;
+}
+
+.fa-bus{
+    margin-left: -2px;
+}
+
+.fa-square-parking {
+    margin-left: 1px;
+    margin-right: 28px;
+}
