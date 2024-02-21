@@ -60,35 +60,64 @@
 
     <main >
 
-        <!-- carosello -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- <h2>Difendiamo i tuoi diritti dopo un infortunio.</h2> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active  dark-overlay">
-                <img class="d-block w-100" src="img/img_pratiche_amministrative-1-modified.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/const.jpg" alt="Second slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true">back</span>
-              <span class="sr-only">back</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true">next</span>
-              <span class="sr-only">next</span>
-            </a>
-          </div>
-    
+      <!-- carosello -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/test/cc-test.jpeg" style="width:100%" alt="Macchina con vetri rotti">
+          <div class="text">In seguito a un incidente rivolgiti a noi</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/test/j-test.jpg" style="width:100%" alt="Statua della Dea della giustizia">
+          <div class="text">Assistenza legale </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext white-bg">3 / 3</div>
+          <img src="img/test/m-test.jpg" style="width:100%" alt="Cartella medica">
+          <div class="text white-bg">Assistenza sanitaria</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
 
-          <div class="divisor align-items-center justify-content-center my-3">
-            <div class="line me-2"></div>
-              <img src="./img/photo_5877277087033835365_x.png" alt="">
-              <div class="line"></div>
-          </div>
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
 
-          <!-- chi siamo -->
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+
+          if (n > slides.length) 
+          {
+            slideIndex = 1
+          }    
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          
+          slides[slideIndex-1].style.display = "block";  
+        }
+      </script>
+
+        <!-- chi siamo -->
         <div id="team" class="item container-xl d-flex align-items-center justify-content-center">
             <div class="item-img">
                 <img src="./img/chi-siamo.jpg" alt="">
