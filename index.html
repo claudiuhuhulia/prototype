@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prot</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 
     <!-- google maps api -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -28,11 +35,13 @@
             </div>
         </div>
         <div class="header-nav">
-            <nav role="navigation">
+            <nav>
 
                 <div id="menuToggle">
         
-                  <input type="checkbox" />
+                  <label for="manu-btn" class="hide">Menu</label>
+                  <input type="checkbox" id="manu-btn">
+
           
                   <span></span>
                   <span></span>
@@ -51,35 +60,64 @@
 
     <main >
 
-        <!-- carosello -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- <h2>Difendiamo i tuoi diritti dopo un infortunio.</h2> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active  dark-overlay">
-                <img class="d-block w-100" src="img/img_pratiche_amministrative-1-modified.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/const.jpg" alt="Second slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-          </div>
-    
+      <!-- carosello -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/test/cc-test.jpeg" style="width:100%" alt="Macchina con vetri rotti">
+          <div class="text">In seguito a un incidente rivolgiti a noi</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/test/j-test.jpg" style="width:100%" alt="Statua della Dea della giustizia">
+          <div class="text">Assistenza legale </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext white-bg">3 / 3</div>
+          <img src="img/test/m-test.jpg" style="width:100%" alt="Cartella medica">
+          <div class="text white-bg">Assistenza sanitaria</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
 
-          <div class="divisor align-items-center justify-content-center my-3">
-            <div class="line me-2"></div>
-              <img src="./img/photo_5877277087033835365_x.png" alt="">
-              <div class="line"></div>
-          </div>
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
 
-          <!-- chi siamo -->
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+
+          if (n > slides.length) 
+          {
+            slideIndex = 1
+          }    
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          
+          slides[slideIndex-1].style.display = "block";  
+        }
+      </script>
+
+        <!-- chi siamo -->
         <div id="team" class="item container-xl d-flex align-items-center justify-content-center">
             <div class="item-img">
                 <img src="./img/chi-siamo.jpg" alt="">
@@ -112,8 +150,8 @@
                <div class="flip-card">
                    <div class="flip-card-inner">
                        <div class="flip-card-front area-di-competenza">
-                        <i class="fa-solid fa-car-burst"></i>
-                           <h4>Sinistri Stradali</h4>
+                          <em class="fa-solid fa-car-burst" title="Sinistro stradale"></em>
+                          <h4>Sinistri Stradali</h4>
                        </div>
                        <div class="flip-card-back">
                           <span>Sei rimasto vittima di un incidente stradale? </span>
@@ -125,7 +163,7 @@
               <div class="flip-card">
                    <div class="flip-card-inner">
                      <div class="flip-card-front area-di-competenza">
-                      <i class="fa-solid fa-house"></i>
+                      <em class="fa-solid fa-house" title="Pratiche Immobiliari"></em>
                        <h4>Pratiche Immobiliari</h4>
                      </div>
                      <div class="flip-card-back">
@@ -138,7 +176,7 @@
                <div class="flip-card">
                    <div class="flip-card-inner">
                      <div class="flip-card-front area-di-competenza">
-                      <i class="fa-solid fa-heart-pulse"></i>
+                      <em class="fa-solid fa-heart-pulse" title="Errori Sanitari"></em>
                       <h4>Errori Sanitari</h4>
                      </div>
                      <div class="flip-card-back">
@@ -151,7 +189,7 @@
                <div class="flip-card">
                    <div class="flip-card-inner">
                      <div class="flip-card-front area-di-competenza">
-                      <i id="doc" class="fa-solid fa-file-signature"></i>
+                      <em id="doc" class="fa-solid fa-file-signature" title="Disbrigo Pratiche"></em>
                       <h4>Disbrigo Pratiche</h4>
                      </div>
                      <div class="flip-card-back">
@@ -164,7 +202,7 @@
                <div class="flip-card">
                    <div class="flip-card-inner">
                      <div class="flip-card-front area-di-competenza">
-                      <i class="fa-solid fa-people-group"></i>
+                      <em class="fa-solid fa-people-group" title="Supporto alle imprese"></em>
                       <h4>Supporto alle imprese</h4>
                      </div>
                      <div class="flip-card-back">
@@ -187,7 +225,7 @@
     <div class="container">
         <div class="row d-flex">
         <div class="contattaci col-12 col-lg-6">
-          <h2 class="text-center my-3">Informazioni</h2>
+          <h3 class="text-center my-3">Informazioni</h3>
           <div class="contattaci-info d-flex  justify-content-center flex-column">
 
               <h4><i class="fa-solid fa-phone-volume fa-lg me-4"></i>320 394 1265</h4>
@@ -224,10 +262,10 @@
           <div id="link-nav" class="link-nav">
               <h3 class="mb-4">Naviga</h3>
               <ul>
-                  <a href="#"><li>Home</li></a>
-                  <a href="#team"><li>Chi Siamo</li></a>
-                  <a href="#aree"><li>Aree di competenza</li></a>
-                  <a href="#contattaci"><li>Contatti</li></a>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#team">Chi Siamo</a></li>
+                  <li><a href="#aree">Aree di competenza</a></li>
+                  <li><a href="#contattaci">Contatti</a></li>
               </ul>
           </div>
 
@@ -235,7 +273,7 @@
             <h3 class="mb-4">Contattaci</h3>
             <ul>
                 <li>Telefono: 320 39 47 265</li>
-                <a href="mailto:info@consulenze2023pantanobonadia.it"><li>info@consulenze2023pantanobonadia.it</li></a>
+                <li><a href="mailto:info@consulenze2023pantanobonadia.it">info@consulenze2023pantanobonadia.it</a></li>
                 <li>Via E. Bernardi 8/12, Bologna 40133 </li>
                 <li>P.IVA: </li>
             </ul>

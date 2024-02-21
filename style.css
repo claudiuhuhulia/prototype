@@ -1,4 +1,8 @@
 /* Generics */
+.hide {
+    display: none;
+}
+
 html {
     position: fixed;
     height: 100%;
