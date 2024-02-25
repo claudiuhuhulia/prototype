@@ -38,6 +38,12 @@ li{
     padding-bottom: 0.6rem;
 }
 
+li > a{
+    color: gray;
+    list-style-type: none;
+    padding-bottom: 0.6rem;
+}
+
 svg {
     background-color:  #222024;
     transform: rotate(180deg);
