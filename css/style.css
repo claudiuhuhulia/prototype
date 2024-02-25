@@ -32,7 +32,7 @@ main {
     margin-top: 100px;
 }
 
-li{
+li, footer a{
     color: gray;
     list-style-type: none;
     padding-bottom: 0.6rem;
